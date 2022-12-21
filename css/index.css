@@ -1,0 +1,223 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+  #header {
+
+    display: flex;
+    margin-top: 4px;
+
+  }
+
+  #header>span:first-child {
+    font-size: 30px;
+    padding: 0 25px;
+
+    line-height: 30px;
+  }
+
+  #header>div>span:nth-child(1) {
+
+    font-size: 25px;
+  }
+
+  #header div {
+    flex-grow: 1;
+    background-color: #eee;
+    border-radius: 12px;
+    display: flex;
+  }
+
+  #header div span {
+    margin: 0 20px;
+    line-height: 30px;
+  }
+
+  #header input {
+    border: none;
+    outline: none;
+    background-color: #eee;
+    line-height: 30px;
+    flex-grow: 1;
+    border-radius: 12px;
+
+
+  }
+
+  #header>span:last-child {
+    padding: 0 25px;
+    font-size: 30px;
+  }
+
+  body,
+  ul,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .tab {
+
+
+    flex-direction: column;
+
+  }
+
+  .tt {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 20px;
+
+
+  }
+
+  .tt span {
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    background-color: #fff;
+
+  }
+
+  .tt .cur {
+    border-bottom: 2px solid black;
+
+    color: #000;
+
+
+
+  }
+
+  .tc {
+
+    font-size: 60px;
+    text-align: center;
+
+    display: none;
+
+
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #bnav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+
+  }
+
+  #bnav ul {
+    display: flex;
+
+  }
+
+  #bnav li {
+    width: 20%;
+    text-align: center;
+  }
+
+  #bnav svg {
+    font-size: 30px;
+    margin: 5px auto;
+  }
+
+  #bnav p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .word {
+    margin-top: 1rem;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    text-indent: 15px;
+  }
+
+  .comment {
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 20px;
+    background-color: #eee;
+    border-radius: .5em;
+  }
+
+  .comment b {
+    font-size: 15px;
+  }
+
+  .comment span:nth-child(2n-1) {
+    margin: 0 10px;
+  }
+
+
+  .comment span:nth-child(2) {
+    font-size: 14px;
+
+  }
+
+  .time {
+    font-size: 10px;
+    color: rgb(162, 159, 159);
+
+  }
+
+  .topic {
+
+    font-size: 10px;
+    color: rgb(5, 170, 5);
+  }
+
+  .recommend {
+    overflow: hidden;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .recommend span:first-child {
+    margin: 20px 10px;
+  }
+
+  .recommend span:nth-child(2) {
+
+    font-size: 15px;
+  }
+
+  .recommend p {
+    text-indent: 15px;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .recommend img {
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 80px;
+    float: left;
+
+  }
+
+  .dianzan {
+
+    clear: both;
+  }
+
+  .dianzan span:nth-child(n) {
+    font-size: 25px;
+    margin: 20px 40px;
+  }

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+  <title>20001010421-周恩鳌</title>
+  <script src="./font/iconfont.js"></script>
+  <link rel="stylesheet" href="./css/pub.css">
+  <style>
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    .botton {
+      border-top-style: solid;
+      border-width: 1px;
+      border-color: gray;
+      position: fixed;
+ 
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 9;
+      display: flex;
+    
+    }
+
+    .botton li {
+      width: 20%;
+      text-align: center;
+    }
+
+    .botton svg {
+      font-size: 40px;
+      margin: 5px auto;
+    }
+
+    #header {
+
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      margin-bottom: 4px;
+      position: fixed;
+    }
+
+    #header>span:first-child {
+      font-size: 30px;
+      padding: 0 25px;
+
+      line-height: 30px;
+    }
+
+    #header>div>span:nth-child(1) {
+
+      font-size: 25px;
+    }
+
+    #header div {
+      flex-grow: 1;
+      background-color: #eee;
+      border-radius: 12px;
+      display: flex;
+    }
+
+    #header div span {
+      margin: 0 20px;
+      line-height: 30px;
+    }
+
+    #header input {
+      border: none;
+      outline: none;
+      background-color: #eee;
+      line-height: 30px;
+      flex-grow: 1;
+      border-radius: 12px;
+
+
+    }
+
+    #header>span:last-child {
+      padding: 0 25px;
+      font-size: 30px;
+    }
+
+
+
+    .tab {
+      height: 2000px;
+
+      flex-direction: column;
+
+    }
+
+    .tt {
+      position: fixed;
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0 20px;
+      margin-top: 40px;
+      background-color: #fff;
+    }
+
+    .tt span {
+      padding: 10px;
+      text-align: center;
+      font-size: 17px;
+      background-color: #fff;
+
+    }
+
+    .tt .cur {
+      border-bottom: 2px solid black;
+
+      color: #000;
+
+
+
+    }
+
+    .tc {
+
+      font-size: 60px;
+      text-align: center;
+
+      display: none;
+
+
+    }
+
+    .word {
+
+      display: flex;
+      font-size: 20px;
+      text-align: left;
+      font-weight: bold;
+      text-indent: 15px;
+    }
+
+    .word p {
+
+      margin-top: 120px;
+    }
+
+
+    .comment {
+      font-size: 20px;
+      text-align: left;
+      margin: 10px 20px;
+      background-color: #eee;
+      border-radius: .5em;
+    }
+
+    .comment b {
+      font-size: 15px;
+    }
+
+    .comment span:nth-child(2n-1) {
+      margin: 0 10px;
+    }
+
+
+    .comment span:nth-child(2) {
+      font-size: 14px;
+
+    }
+
+    .time {
+      font-size: 10px;
+      color: rgb(162, 159, 159);
+
+    }
+
+    .topic {
+
+      font-size: 10px;
+      color: rgb(5, 170, 5);
+    }
+
+    .recommend {
+
+      overflow: hidden;
+      text-align: left;
+      font-size: 25px;
+
+    }
+
+    .recommend span:first-child {
+
+      margin: 20px 10px;
+    }
+
+    .recommend span:nth-child(2) {
+
+      font-size: 15px;
+    }
+
+    .recommend p {
+
+      text-indent: 15px;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+
+    .recommend img {
+      margin-left: 15px;
+      margin-top: 5px;
+      width: 28%;
+      float: left;
+          
+    }
+
+    #first {
+      margin-top: 100px;
+    }
+
+    .dianzan {
+
+      clear: both;
+    }
+
+  
+
+    .dianzan span:nth-child(n) {
+      font-size: 25px;
+      margin: 20px 40px;
+
+    }
+
+    .jlist>li {
+      display: flex;
+      border-bottom: 1px dashed #ccc;
+      margin-bottom: 8px;
+      padding-bottom: 2px;
+    }
+
+    .jlist img {
+      width: 120px;
+    }
+
+    .txt {
+      margin-left: 10px;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .txt h3 {
+      font-size: 14px;
+      line-height: 38px;
+      color: #333;
+      width: 100%;
+      text-align: left;
+
+    }
+
+    .txt span {
+      font-size: 8px;
+      color: #666;
+
+
+    }
+
+    .time {
+
+
+      flex-grow: 1;
+      text-align: right;
+      margin-right: 4px;
+      color: rgb(8, 252, 8);
+
+
+    }
+
+    .people {
+      display: block;
+      margin-top: 20px;
+      margin-right: 100px;
+    }
+
+    .group span {
+      display: block;
+      font-size: 15px;
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    .group p {
+      font-size: 10px;
+      display: block;
+      text-align: left;
+      margin: 10px 0;
+      text-indent: 10px;
+      color: #666;
+    }
+ .picture{
+  overflow:hidden, 
+ }
+  
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <span>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-caidan_o-copy"></use>
+      </svg>
+    </span>
+    <div>
+      <span>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-Magnifier"></use>
+        </svg>
+      </span>
+      <input type="text" placeholder="我的2022年度读书总结">
+
+    </div>
+    <span>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-xinfeng"></use>
+      </svg>
+    </span>
+
+  </header>
+   
+
+  <ul>
+    <li>
+
+      <div class="tab">
+        <div class="tt">
+          <span class="cur">动态</span>
+          <span>推荐</span>
+
+        </div>
+
+        <div class="tc" style="display:block">
+          <div class="word">
+
+            <p>看看别人说了什么...</p>
+
+          </div>
+          <div class="comment">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-taolun"></use>
+              </svg>
+              <b>你最喜欢的一句歌词</b>
+
+
+
+            </span>
+            <br>
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-07"></use>
+              </svg>
+              <span>想念的长轨，我可以一个人站在... </span>
+
+              <span class="time">31分钟前</span>
+            </span>
+
+          </div>
+          <div class="comment">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-taolun"></use>
+              </svg>
+              <b>如果只能推荐一部动漫</b>
+
+
+            </span>
+            <br>
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-07"></use>
+              </svg>
+              <span>内容的话比较推荐《我的邻居山...</span>
+              <span class="time">1小时前</span>
+            </span>
+
+          </div>
+          <div class="comment">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-taolun"></use>
+              </svg>
+              <b>你每天都有哪些突如其来的感悟？</b>
+
+
+            </span>
+            <br>
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-07"></use>
+              </svg>
+              <span>你可以永远相信时间。</span>
+              <span class="time">3分钟前</span>
+            </span>
+
+          </div>
+          <div>
+            <span class="topic">23162个话题在被参与></span>
+          </div>
+        </div>
+        <div class="tc">
+          <div class="recommend">
+            <div id="first">
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-01"></use>
+                </svg>
+              </span>
+              <span>
+                写作的留白
+              </span>
+              <p>阅读这本书是一种十分喜欢却又缓慢克制的状态！</p>
+       <ul class="picture">
+        <li>
+          <div>
+            <img src="./img/202212132143227.jpg" alt="">
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="./img/微信图片_202212132143228.jpg" alt="">
+          </div>
+        </li>
+       </ul>
+
+              
+              <div class="dianzan" id="dianzan">
+                <span>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dianzan"></use>
+                  </svg>
+                </span>
+                <span>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-pinglun"></use>
+                  </svg>
+                </span>
+
+                <span>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhuanfa"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="recommend">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-35"></use>
+              </svg>
+            </span>
+            <span>
+              一天一个头像
+            </span>
+            <p>Girlspart | 想收集一些胶片风的头像</p>
+
+
+            <span>
+              <img src="./img/202212132143224.jpg" alt="">
+              <img src="./img/202212132143225.jpg" alt="">
+              <img src="./img/202212132143226.jpg" alt="">
+            </span>
+            <div class="dianzan">
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-dianzan"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-pinglun"></use>
+                </svg>
+              </span>
+
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-zhuanfa"></use>
+                </svg>
+              </span>
+
+            </div>
+
+
+          </div>
+          <div class="recommend">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-35"></use>
+              </svg>
+            </span>
+            <span>
+              可以看看你的书桌吗小组
+            </span>
+            <p> 努力学习 | 12.10 上下铺宿舍自创小世界 </p>
+
+
+            <span>
+              <img src="./img/20221213214322.jpg" alt="">
+              <img src="./img/202212132143221.jpg" alt="">
+              <img src="./img/202212132143222.jpg" alt="">
+            </span>
+            <div class="dianzan">
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-dianzan"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-pinglun"></use>
+                </svg>
+              </span>
+
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-zhuanfa"></use>
+                </svg>
+              </span>
+
+
+            </div>
+
+
+          </div>
+
+          <div class="recommend">
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-07"></use>
+              </svg>
+            </span>
+            <span>
+              Crassula
+            </span>
+            <p> 两张被遗忘在硬盘的照片，拍与索尔兹伯里 </p>
+
+
+            <span>
+
+              <img src="./img/20221217182000.jpg" alt="">
+
+            </span>
+            <div class="dianzan">
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-dianzan"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-pinglun"></use>
+                </svg>
+              </span>
+
+              <span>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-zhuanfa"></use>
+                </svg>
+              </span>
+
+
+            </div>
+
+
+          </div>
+          <div class="group">
+            <span>发现小组</span>
+            <p>你可能感兴趣</p>
+          </div>
+          <ul class="jlist">
+
+          </ul>
+        </div>
+
+      </div>
+      </div>
+
+    </li>
+  </ul>
+  </div>
+
+
+
+
+  </div>
+  <ul class="botton">
+    <li>
+      <a href="./index.html">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shouye1"></use>
+        </svg>
+        <p>首页</p>
+      </a>
+    </li>
+
+    <li>
+      <a href="./3rd.html">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-iconset0129"></use>
+        </svg>
+        <p>书影圈</p>
+      </a>
+    </li>
+    <li>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-pengyouquan"></use>
+      </svg>
+      <p>小组</p>
+    </li>
+    <li>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-shangcheng"></use>
+      </svg>
+      <p>市集</p>
+    </li>
+    <li>
+      <a href="./2nd.html">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-wode"></use>
+      </svg>
+      <p>我</p>
+    </a>
+    </li>
+  </ul>
+
+  <script>
+    var jarr = [{
+        link: "http://ltaaa.com",
+        img: "./img/g4.jpg",
+        title: "我们要当小说家",
+        author: "我们是卖字翁，只卖文字不卖身。",
+        people: "3137成员",
+        time: "+加入",
+
+      },
+      {
+        link: "http://ltaaa.com",
+        img: "./img/g2.png",
+        title: "Book Highlights",
+        author: "让我们一起记录书中的高光时刻吧。",
+        people: "819成员",
+        time: "+加入",
+      },
+      {
+
+        link: "http://ltaaa.com",
+        img: "./img/g3.jpg",
+        title: "脑内幻想的泡沫",
+        author: "入组必读https//www.doubai.com",
+        people: "1993成员",
+        time: "+加入",
+      },
+
+    ]
+    var jlist = document.querySelector(".jlist");
+    //dom
+    jarr.forEach((v, j) => {
+      var nli = document.createElement("li");
+      nli.innerHTML = ` 
+        <a href="${v.link}">
+                <img src="${v.img}" >
+            </a>
+                <div class="txt">
+                    <h3>${v["title"]}</h3>
+                    <span class="author">${v["author"]}</span>
+                      <span class="people">${v["people"]}</span>
+                    
+                         
+                      <p class="time">${v["time"]}</p>
+                    
+                     
+                </div>
+                `;
+      jlist.appendChild(nli);
+
+    })
+
+  
+  </script>
+  <script src="./js/tab.js">
+
+  </script>
+
+</body>
+
+</html>
