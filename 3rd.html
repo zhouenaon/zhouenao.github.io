@@ -42,7 +42,1016 @@
     .botton svg {
       font-size: 40px;
       margin: 5px auto;
-    }<!DOCTYPE html>
+    }<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+  <title>20001010421-周恩鳌</title>
+  <script src="./font/iconfont.js"></script>
+  <link rel="stylesheet" href="./css/pub.css">
+  <link rel="stylesheet" href="./js/swiper/swiper-bundle.css">
+
+  <style>
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    .botton {
+      border-top-style: solid;
+      border-width: 1px;
+      border-color: gray;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 9;
+      display: flex;
+    }
+
+    .botton li {
+      width: 20%;
+      text-align: center;
+    }
+
+    .botton svg {
+      font-size: 40px;
+      margin: 5px auto;
+    }
+
+    #header {
+      z-index: 9999;
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      margin-bottom: 4px;
+      position: fixed;
+    }
+
+    #header>span:first-child {
+      font-size: 30px;
+      padding: 0 25px;
+
+      line-height: 30px;
+    }
+
+    #header>div>span:nth-child(1) {
+
+      font-size: 25px;
+    }
+
+    #header div {
+      flex-grow: 1;
+      background-color: #eee;
+      border-radius: 12px;
+      display: flex;
+    }
+
+    #header div span {
+      margin: 0 20px;
+      line-height: 30px;
+    }
+
+    #header input {
+      border: none;
+      outline: none;
+      background-color: #eee;
+      line-height: 30px;
+      flex-grow: 1;
+      border-radius: 12px;
+    }
+
+    #header>span:last-child {
+      padding: 0 25px;
+      font-size: 30px;
+    }
+
+    .tab {
+      height: 5000px;
+
+
+
+    }
+
+    .tt {
+      z-index: 9999;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0 20px;
+      margin-top: 40px;
+      background-color: #fff;
+    }
+
+    .tt span {
+      padding: 10px;
+      text-align: center;
+      font-size: 17px;
+      background-color: #fff;
+
+    }
+
+    .tt .cur {
+      border-bottom: 2px solid black;
+
+      color: #000;
+
+
+
+    }
+
+    .tc {
+
+      font-size: 60px;
+      text-align: center;
+
+      display: none;
+    }
+
+    .one {
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+    }
+
+    .one p {
+      font-size: 15px;
+    }
+
+    .one li {
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(210, 207, 207);
+      width: 25%;
+
+      border-radius: 15px;
+      margin: 100px 10px 0 10px;
+    }
+
+    div span {
+      display: block;
+      font-size: 25px;
+      text-align: left;
+    }
+
+    .move {
+
+
+      margin: 20px 0;
+
+
+    }
+
+    .move span {
+      display: inline;
+
+    }
+
+    .move span:nth-child(2) {
+      color: grey;
+    }
+
+    .swiper-slide {
+      text-align: center;
+
+    }
+
+    .swiper-slide img {
+      background-color: #eee;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide h4 {
+      font-size: 10px;
+
+
+    }
+
+    .report {
+      background-color: #fff;
+      height: 100px;
+      display: flex;
+      margin: 0 auto;
+      width: fit-content;
+
+    }
+
+    .found-move>h3 {
+      font-size: 15px;
+      text-align: left;
+      Text-indent: 10px;
+    }
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .nav,
+    .bav {
+      height: 200px;
+      margin: 10px;
+    }
+
+    .nav>li,
+    .bav>li {
+      position: relative;
+      float: left;
+      width: 20%;
+      height: 41px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .nav li a,
+    .bav li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 41px;
+      color: #333;
+    }
+
+    .nav>li>a:hover,
+    .bav>li>a:hover {
+      background-color: #eee;
+
+    }
+
+    .nav ul,
+    .bav ul {
+      display: none;
+      position: absolute;
+
+      left: 0;
+      width: 100%;
+
+
+    }
+
+    .nav ul li,
+    .bav ul li {
+      border-radius: 7px;
+      margin: 10px 0;
+      border: 1px solid rgb(198, 195, 195);
+    }
+
+    .nav ul li a:hover,
+    .bav ul li a:hover {
+      background-color: rgb(225, 254, 225);
+      color: rgb(6, 211, 6);
+    }
+
+    .bofang {
+      margin-left: 5px;
+      display: flex;
+      height: 200px;
+    }
+
+    .bofang img {
+      margin: 5px;
+    }
+
+    .name p {
+      float: left;
+      font-size: 20px;
+      text-align: left;
+      text-indent: 5px;
+    }
+
+    .name span {
+      float: left;
+      display: block;
+      font-size: 20px;
+
+    }
+
+    .name span:nth-child(3) {
+      margin-left: 200px;
+    }
+
+    .star {
+      color: orange;
+      clear: both;
+      font-size: 10px;
+      display: flex;
+      margin-left: 8px;
+
+    }
+
+    .introduction {
+      word-wrap: break-word;
+    }
+
+    .introduction span:first-child {
+      font-size: 8px;
+      color: grey;
+
+    }
+
+    .introduction p {
+      width: 100%;
+      font-size: 13px;
+      border-bottom: 1px solid black;
+      padding-bottom: 7px;
+    }
+
+    .like span {
+      font-size: 5px;
+      margin: 10px 10px;
+      color: grey;
+
+
+    }
+
+    .jlist {
+
+
+      margin-left: 10px;
+    }
+
+    .jlist>li {
+      display: block;
+      background-color: rgb(250, 250, 250);
+      text-align: left;
+      margin: 8px;
+
+
+    }
+
+    .txt {
+      flex-grow: 1;
+      
+      display: flex;
+      flex-wrap: wrap;
+      /* 换行 */
+
+    }
+
+    .txt span {
+      font-size: 5px;
+      color: #a9a9a9a9;
+      line-height: 18px;
+      margin: 0;
+    }
+
+    .txt p {
+      font-size: 20px;
+      line-height: 32px;
+      width: 100%;
+    }
+
+    .news {
+
+
+      margin-left: 8px;
+    }
+
+    .jlist img {
+      display: flex;
+      width: 100%;
+      height: 200px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <span>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-caidan_o-copy"></use>
+      </svg>
+    </span>
+    <div>
+      <span>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-Magnifier"></use>
+        </svg>
+      </span>
+      <input type="text" placeholder="我的2022年度读书总结">
+
+    </div>
+    <span>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-xinfeng"></use>
+      </svg>
+    </span>
+
+  </header>
+ 
+
+
+
+
+
+
+  <div class="tab">
+    <div class="tt">
+      <span class="cur">电影</span>
+      <span>电视</span>
+      <span>读书</span>
+      <span>连载</span>
+      <span>音乐</span>
+      <span>同城</span>
+    </div>
+    <div class="tc" style="display:block">
+      <ul class="one">
+        <li>
+
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-sousuo"></use>
+          </svg>
+          <p>找电影</p>
+
+        </li>
+
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-bangdan"></use>
+          </svg>
+          <p>豆瓣榜单</p>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-daojishi"></use>
+          </svg>
+          <p>即将上映</p>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-bofang"></use>
+          </svg>
+          <p>豆瓣片单</p>
+        </li>
+
+      </ul>
+
+      <div class="move">
+        <span>影院热映</span>
+        <span>| 豆瓣热门</span>
+
+
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="./img/bb.png" alt=" ">
+            <h4>八佰</h4>
+          </div>
+
+          <div class="swiper-slide"><img src="./img/zgys.jpg" alt="">
+            <h4>中国医生</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/bxjg4.png" alt="">
+            <h4>变形金刚4</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/shxd.png" alt="">
+            <h4>扫黑行动</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/mss.png" alt="">
+            <h4>魔术师</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/wlgt.png" alt="">
+            <h4>万里归途</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/afd.png" alt="">
+            <h4>阿凡达：水之道</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/hhw.png" alt="">
+            <h4>航海王</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/zzsc.png" alt="">
+            <h4>沼泽深处的女孩</h4>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="report">
+          <img src="./img/20221218105411.jpg" alt="">
+        </div>
+        <div class="found-move">
+          <h3>找电影</h3>
+     
+          <ul class="nav">
+            <li>
+              <a href="#"><svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-bofang1"> </use>
+                </svg>可播放</a>
+              <ul>
+                <li>
+                  <a href="">钢琴</a>
+                </li>
+                <li>
+
+                  <a href="">爵士乐</a>
+                </li>
+                <li>
+                  <a href="">警匪</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">类型</a>
+              <ul>
+                <li>
+                  <a href="">科幻</a>
+                </li>
+                <li>
+
+                  <a href="">惊悚</a>
+                </li>
+                <li>
+                  <a href="">喜剧</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">地区</a>
+              <ul>
+                <li>
+                  <a href="">美国</a>
+                </li>
+                <li>
+                  <a href="">韩国</a>
+                </li>
+                <li>
+                  <a href="">中国</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">排序</a>
+              <ul>
+                <li>
+                  <a href="">综合排序</a>
+                </li>
+                <li>
+                  <a href="">近期热度</a>
+                </li>
+                <li>
+                  <a href="">高分优先</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-tag"> </use>
+                </svg> </a>
+
+            </li>
+          </ul>
+          <div class="bofang">
+            <img src="./img/022945t2ceojyziumuo85i.jpg" alt="">
+            <img src="./img/v2-3ebbb1c2c85be0e8a88e76271f45fd91_r.jpg" alt="">
+
+          </div>
+          <div class="name">
+            <p>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-bofang1-copy"> </use>
+              </svg>
+            </p>
+            <span>
+              肖申客的救赎（1994）
+            </span>
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiangkan"></use>
+              </svg>
+
+            </span>
+            <ul class="star">
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                9.7
+              </li>
+
+            </ul>
+            <div class="introduction">
+              <span>
+                1994/美国/犯罪 剧情/弗兰克·德拉邦特/蒂姆·...
+              </span>
+              <p>"恐惧让你沦为囚犯，希望让你重获自由。"——《肖申克的救赎》 -- 如小果</p>
+
+            </div>
+          </div>
+          <div class="like"><span>喜欢《肖申客的救赎》的也喜欢 ></span>
+          </div>
+
+          <div class="bofang">
+            <img src="./img/6045ea3cd7f8a70001752735+L.png" alt="">
+            <img src="./img/0169a356ea6c506ac7255885dc6f92.jpg@2o.jpg" alt="">
+
+          </div>
+          <div class="name">
+            <p>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-bofang1-copy"> </use>
+              </svg>
+            </p>
+            <span>
+              疯狂动物城（2016）
+            </span>
+            <span>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiangkan"></use>
+              </svg>
+
+            </span>
+            <ul class="star">
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                9.2
+              </li>
+
+            </ul>
+            <div class="introduction">
+              <span>
+                2016/美国/喜剧 动画冒险/拜伦·霍华德/瑞奇·摩...
+              </span>
+              <p>"树懒太好笑了！！那两分钟我嗓子都哑了！！ -- 祥林嫂</p>
+
+            </div>
+          </div>
+          <!-- // -->
+
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="tc">
+      <ul class="one">
+        <li>
+
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-sousuo"></use>
+          </svg>
+          <p>找电视</p>
+
+        </li>
+
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-bangdan"></use>
+          </svg>
+          <p>豆瓣榜单</p>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-daojishi"></use>
+          </svg>
+          <p>即将上映</p>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jihuabiao"></use>
+          </svg>
+          <p>播出时间表</p>
+        </li>
+
+      </ul>
+      <div class="move">
+        <span>热播新剧</span>
+        <span>| 热播综艺</span>
+
+
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="./img/qy.jpg" alt=" ">
+            <h4>庆余年</h4>
+          </div>
+
+          <div class="swiper-slide"><img src="./img/dssnz.jpg" alt="">
+            <h4>大宋少年志</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/ygz.jpg" alt="">
+            <h4>勇敢者</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/qgjc.jpg" alt="">
+            <h4>千古玦尘</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/djdh2.jpg" alt="">
+            <h4>大江大河2</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/dqg.jpg" alt="">
+            <h4>大秦赋</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/wdqk.jpg" alt="">
+            <h4>武动乾坤</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/xsj.jpg" alt="">
+            <h4>新世界</h4>
+          </div>
+          <div class="swiper-slide"><img src="./img/ldx.jpg" alt="">
+            <h4>狼殿下</h4>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="report">
+          <img src="./img/20221218213348.jpg" alt="">
+        </div>
+        <div class="found-move">
+          <h3>找电视</h3>
+          <ul class="bav">
+            <li>
+              <a href="#"><svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-bofang1"> </use>
+                </svg>可播放</a>
+              <ul>
+                <li>
+                  <a href="">文化</a>
+                </li>
+                <li>
+
+                  <a href="">亲情</a>
+                </li>
+                <li>
+                  <a href="">感人</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">类型</a>
+              <ul>
+                <li>
+                  <a href="">喜剧</a>
+                </li>
+                <li>
+
+                  <a href="">爱情</a>
+                </li>
+                <li>
+                  <a href="">古装</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">地区</a>
+              <ul>
+                <li>
+                  <a href="">意大利</a>
+                </li>
+                <li>
+                  <a href="">俄罗斯</a>
+                </li>
+                <li>
+                  <a href="">华语</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">排序</a>
+              <ul>
+                <li>
+                  <a href="">综合排序</a>
+                </li>
+                <li>
+                  <a href="">近期热度</a>
+                </li>
+                <li>
+                  <a href="">首播时间</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-tag"> </use>
+                </svg> </a>
+
+            </li>
+          </ul>
+          <ul class="jlist">
+
+          </ul>
+          <div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="tc">
+</div>
+      <div class="tc">
+
+      </div>
+      <div class="tc">
+
+
+      </div>
+      <div class="tc">
+
+      </div>
+    </div>
+
+
+
+
+    <ul class="botton">
+      <li>
+        <a href="./index.html">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shouye1"></use>
+          </svg>
+          <p>首页</p>
+        </a>
+      </li>
+      <li>
+        <a href="./3rd.html">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-iconset0129"></use>
+        </svg>
+        <p>书影圈</p>
+      </a>
+      </li>
+      <li>
+        <a href="#">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-pengyouquan"></use>
+        </svg>
+        <p>小组</p>
+      </a>
+      </li>
+      <li>
+        <a href="#">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shangcheng"></use>
+        </svg>
+        <p>市集</p>
+      </a>
+      </li>
+      <li>
+  
+        <a href="./2nd.html">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-wode"></use>
+        </svg>
+        <p>我</p>
+      </a>
+      </li>
+    </ul>
+    
+    <script src="./js/tab.js">
+    </script>
+
+
+    <script src="./js/swiper/swiper-bundle.min.js"> </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+
+      });
+    </script>
+    <script>
+      // 1. 获取元素
+      var nav = document.querySelector('.nav');
+      var lis = nav.children; // 得到3个小li
+      // 2.循环注册事件
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].onmouseover = function () {
+          this.children[1].style.display = 'block';
+        }
+        lis[i].onmouseout = function () {
+          this.children[1].style.display = 'none';
+        }
+      }
+    </script>
+    <script>
+      // 1. 获取元素
+      var nav = document.querySelector('.bav');
+      var lis = nav.children;  
+  
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].onmouseover = function () {
+          this.children[1].style.display = 'block';
+        }
+        lis[i].onmouseout = function () {
+          this.children[1].style.display = 'none';
+        }
+      }
+      var jarr = [{
+
+        title: "庆余年 (2019)",
+        news: "2019/中国大陆/剧情 古装/ 孙皓/张若昀  李沁...",
+        link: "#",
+        img: "./img/qyn.jpg"
+
+      },
+      {
+        title: "爱情公寓4 (2014)",
+        news: "2014/中国大陆/喜剧  爱情/ 韦正/娄艺潇 陈赫...",
+        link: "#",
+        img: "./img/aqgy4.jpg"
+      },
+      {
+        title: "且试天下 (2022)",
+        news: "2012/中国大陆/剧情  爱情/ 尹涛/杨洋  赵露思...",
+        link: "#",
+        img: "./img/qstx.jpg"
+      },
+      {
+        title: "猎罪图鉴 (2022)",
+        news: "2022/中国大陆/悬疑  犯罪/  邢键钧/檀健次  金世佳...",
+        link: "#",
+        img: "./img/lztj.jpg"
+      },
+      {
+        title: "开端 (2022)",
+        news: "2022/中国大陆/剧情  爱情/  孙墨龙/ 白敬亭   赵今麦...",
+        link: "#",
+        img: "./img/kd.jpg"
+      }]
+
+      var jlist = document.querySelector(".jlist")
+      //dom
+      jarr.forEach((v, i) => {
+        var nli = document.createElement("li")  
+        nli.innerHTML = `
+            <a href="#">
+                    <img src="${v.img}">
+                 </a> 
+                <div class="txt">
+                    <p>${v["title"]}</p>
+                    <span class="news">${v.news}</span>
+                </div>
+                
+            `;
+
+   
+        jlist.appendChild(nli); 
+      })
+    </script>
+</body>
+
+</html>
 <html lang="en">
 
 <head>
