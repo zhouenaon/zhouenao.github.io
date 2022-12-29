@@ -42,7 +42,628 @@
 
     }
 
-    .botton svg {<!DOCTYPE html><!DOCTYPE html>
+    .botton svg {<!DOCTYPE html><!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+  <title>20001010421-周恩鳌</title>
+  <script src="./font/iconfont.js"></script>
+  <link rel="stylesheet" href="./js/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/pub.css">
+  <style>
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    .botton {
+      border-top-style: solid;
+      border-width: 1px;
+      border-color: gray;
+      position: fixed;
+
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 9;
+      display: flex;
+
+    }
+
+    .botton li {
+      width: 20%;
+      text-align: center;
+
+
+    }
+
+    .botton svg {
+
+      font-size: 40px;
+      margin: 5px auto;
+    }
+
+    .head {
+      padding-top: 10px;
+      z-index: 9999;
+
+      background-color: #fff;
+
+      width: 100%;
+      display: flex;
+      display: none;
+
+
+    }
+     
+
+    .move {
+      padding-top: 10px;
+      z-index: 9999;
+
+      background-color: #fff;
+
+      width: 100%;
+      display: flex;
+
+    }
+
+    .top {
+      background-color: rgb(175, 173, 173);
+
+    }
+
+    .top img {
+
+      height: 80px;
+      width: 100px;
+      margin: 0 auto;
+    }
+
+    .top li:first-child {
+
+
+
+      background-color: rgb(175, 173, 173);
+    }
+
+    .top li:last-child {
+
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .touch {
+      border: none;
+      background-color: #fff;
+      font-size: 30px;
+    }
+
+    .head li {
+
+      font-size: 30px;
+    }
+
+    .head li span {
+      font-size: 10px;
+    }
+
+    .head li:first-child {
+      flex-grow: 1;
+
+
+    }
+
+    .head li:nth-child(2) {
+      flex-grow: 1;
+    }
+
+    #toggle-Sidebal {
+      border: none;
+      background-color: #fff;
+      font-size: 30px;
+    }
+
+    .tab {
+      height: 3000px;
+      background-color: rgb(250, 247, 247);
+
+
+    }
+
+    .tt {
+      z-index: 9999;
+
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0 20px;
+
+      background-color: #fff;
+    }
+
+    .tt span {
+      padding: 10px;
+      text-align: center;
+      font-size: 17px;
+      background-color: #fff;
+
+    }
+
+    .tt .cur {
+      border-bottom: 2px solid black;
+
+      color: #000;
+    }
+
+    .tc {
+
+      font-size: 60px;
+      text-align: center;
+      padding-top: 40px;
+      display: none;
+    }
+
+    .sidebal {
+    
+      width: 300px;
+      height: 1000px;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background: #eee;
+      display: flex;
+
+
+      transform: translateX(-400px);
+
+    }
+
+    .sidebal.show {
+      transform: translateX(0);
+    }
+
+
+    .sidebal-menu li {
+      height: 50px;
+
+      text-indent: 20px;
+
+    }
+
+    .shut {
+
+      font-size: 20px;
+      margin-top: 10px;
+      color: grey;
+
+    }
+
+    .book span:first-child {
+      font-size: 20px;
+
+      display: flex;
+      color: grey;
+      background-color: #fff;
+      height: 40px;
+
+    }
+
+    /* .move {
+      background-color: #fff;
+    }
+*/
+    .movie span:first-child {
+      font-size: 20px;
+      display: flex;
+      text-indent: 5px;
+      margin: 10px;
+    }  
+
+    .box li div:first-child {
+      font-size: 15px;
+      text-align: left;
+      text-indent: 10px;
+      margin: 10px;
+    }
+
+    .box svg {
+      font-size: 20px;
+      display: flex;
+      margin: 10px 40px;
+    }
+
+    .box li div:last-child {
+      font-size: 5px;
+      text-align: left;
+      color: rgb(185, 184, 184);
+
+    }
+
+    .box li {
+      float: left;
+      width: 25%;
+      border: solid 1px grey;
+      margin-left: 24px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .two {
+      font-size: 20px;
+      text-align: right;
+
+    }
+
+    .group {
+      margin: 10px;
+      border: solid 1px rgb(198, 197, 197);
+      border-radius: 8px;
+ 
+      margin-top: 90px;
+    }
+
+    .group span:first-child {
+    
+      font-size: 20px;
+      
+      display: flex;
+    
+    }
+
+    .group span:last-child {
+      display: flex;
+      font-size: 18px;
+      text-align: left;
+      color: gray;
+    }
+
+    .three {
+      font-size: 0;
+      text-align: right;
+
+
+    }
+
+    .jlist {
+
+      text-align: left;
+      margin: 10px 20px;
+
+
+
+    }
+
+    .jlist li {
+      font-size: 15px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #eee;
+      border-radius: .5em;
+    }
+
+
+
+
+
+    .time {
+
+      color: rgb(162, 159, 159);
+
+    }
+
+    .word {
+      font-size: 20px;
+      text-align: left;
+      text-indent: 10px;
+    }
+
+    .three {
+      font-size: 30px;
+      color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="top" id="top">
+      <ul>
+
+        <li>
+          <img src="./img/tx.jpg" alt="">
+        </li>
+
+        <li>
+          豆友
+        </li>
+
+      </ul>
+
+    </div>
+
+    <ul class="head" id="head">
+      <li>
+        <button class="touch" id="toggle-sidebal">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-caidan_o-copy"></use>
+          </svg>
+        </button>
+
+      </li>
+      <li>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-01"></use>
+        </svg>
+        <span> 豆友 </span>
+      </li>
+
+      <li>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-xinfeng"></use>
+        </svg>
+      </li>
+    </ul>
+
+
+
+  </header>
+
+  <div class="tab">
+    <div class="tt" id="tt">
+
+      <span class="cur">主页</span>
+      <span>动态</span>
+      <span>相册</span>
+    </div>
+    <div class="tc" style="display:block">
+      <div class="book">
+        <span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-01"></use>
+          </svg>
+          创建我的书影音
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-paihangbang"></use>
+          </svg>
+        </span>
+
+      </div>
+      <div class="movie">
+        <span>书影音档案></span>
+
+        <ul class="box">
+          <li>
+            <div>图书></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-tushu"></use>
+            </svg>
+            <div>记录你想、在看、看过的书籍</div>
+          </li>
+          <li>
+            <div>影视></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-iconset0130"></use>
+            </svg>
+            <div>记录你想、在看、看过的影视</div>
+          </li>
+          <li>
+            <div>音乐></div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-yinle"></use>
+            </svg>
+            <div>记录你想、在看、看过的音乐</div>
+          </li>
+        </ul>
+
+        <div class="two">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-houtaishangpinguanli"></use>
+          </svg>
+          <span>∨</span>
+        </div>
+      </div>
+      <div class="group">
+
+        <span>我的小组</span>
+        <span>你还没有加入任何小组></span>
+      </div>
+      <div class="three">
+        <button>动态 </button> <button>全部 </button>
+      </div>
+    </div>
+
+    <div class="tc">
+      <div class="word">
+        <span> 还没有发过动态，</span>
+
+        <p>看看别人在什么什么...</p>
+      </div>
+      <ul class="jlist"></ul>
+    </div>
+    <div class="tc">
+
+      <span class="three">暂无相册</span>
+
+    </div>
+
+  </div>
+
+
+  <div class="sidebal" id="app-sidebal">
+    <ul class="sidebal-menu" id="sidebal-menu">
+
+
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-01"></use>
+        </svg>
+        <span> 豆友 </span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shoucang"></use>
+        </svg>
+        <span> 我的收藏</span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-guanzhudianpu"></use>
+        </svg>
+        <span> 我的关注</span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-w_lishi"></use>
+        </svg>
+        <span> 浏览历史</span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-yusan01"></use>
+        </svg>
+        <span> 青少年模式</span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shezhi"></use>
+        </svg>
+        <span> 设置</span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-bangzhu"></use>
+        </svg>
+        <span> 帮助与反馈</span></li>
+      <li> <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shequ"></use>
+        </svg>
+
+        <span> 社区管理中心</span></li>
+      <li><button class="shut" id="toggle-sidebar"> < </button></li>
+    </ul>
+            </div>
+    <ul class="botton">
+        <li>
+          <a href="./3rd.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-shouye1"></use>
+            </svg>
+            <p>首页</p>
+          </a>
+        </li>
+    
+        <li>
+          <a href="./3rd.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-iconset0129"></use>
+            </svg>
+            <p>书影圈</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-pengyouquan"></use>
+          </svg>
+          <p>小组</p>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shangcheng"></use>
+          </svg>
+          <p>市集</p>
+        </a>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-wode"></use>
+          </svg>
+          <p>我</p>
+        </li>
+      </ul>
+      <script src="./js/tab.js"></script>
+      <script>
+        var btnToggle =document.querySelector("#toggle-sidebal");
+        var  appSidebal =document.querySelector("#app-sidebal");
+        var  shutSidebal =document.querySelector("#toggle-sidebar");
+                                          
+        btnToggle.onclick =  function(){
+            appSidebal.classList.toggle('show')
+        }
+        shutSidebal.onclick =  function(){
+          appSidebal.classList.toggle('show')
+        }
+      </script>
+      <script>
+        var bt =document.querySelector("#head");
+        window.onscroll=()=>{
+          var st=document.documentElement.scrollTop;
+          console.log(st);
+          if(st>top.offsetHeight){
+          bt.classList.toggle('move');
+     
+          }
+          else{
+            bt.classList.toggle('move');
+          }
+        }
+      </script>
+     <script>
+      var jarr = [{
+         
+          svg: "#icon-taolun",
+          title: "你是怎么来豆瓣的？",
+          svg1: "#icon-07",
+          people: "朋友说这么可以找对象吗...",
+          time: "35分钟前",
+  
+        },
+        {
+         
+          svg: "#icon-taolun",
+          title: "你最近度过印象最深的书",
+          svg1: "#icon-07",
+          people: "我不喜欢这时间，我只喜欢你...",
+          time: "21分钟前",
+        },
+        {
+  
+          svg: "#icon-taolun",
+          title: "你最喜欢的一句歌词",
+          svg1: "#icon-07",
+          people: "想念的长轨，我可以一个人站在...",
+          time: "31分钟前",
+        },
+  
+      ]
+      var jlist = document.querySelector(".jlist");
+      //dom
+      jarr.forEach((v, j) => {
+        var nli = document.createElement("li");
+        nli.innerHTML = ` 
+        <svg class="icon" aria-hidden="true">
+                <use xlink:href="${v.svg}"></use>
+              </svg>
+              <b>${v["title"]}</b>
+              <p>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="${v.svg1}"></use>
+                  </svg>
+                  <span>${v["people"]}</span>
+                  <span class="${v["time"]}">31分钟前</span>
+              </p>
+                  `;
+        jlist.appendChild(nli);
+  
+      })
+  
+    
+    </script>
+      
+
+</body>
+</html>
 <html lang="en">
 
 <head>
